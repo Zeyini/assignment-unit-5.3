@@ -30,8 +30,38 @@ console.log(addToCollection(myCollection, "Album 6", "Artist A", 2012));
 console.log(myCollection);
 console.log({myCollection});
 
+function showCollection (myCollection) {
+  for (i = 0; i < myCollection.length; i++) {
+    // let album = collection[i]; // singular album from the collection
+    // album's information formatted within a single string, log each album information,
+    console.log(`${myCollection[i].title} by ${myCollection[i].artist}, published in ${myCollection[i].yearPublished}`);
+  }
+}
+
+ (showCollection(myCollection));
 
 
+  function findByArtist(myCollection, artist) {
+    let artistMatched = []; // Create an empty array to hold any matching results
+  
+    for (let i = 0; i < myCollection.length; i++) {
+      if (artist === myCollection[i].artist) {
+        artistMatched.push(myCollection[i]);
+      }
+    }
+  
+    if (artistMatched.length === 0) {
+      return `No albums found for artist "${artist}"`;
+    } else {
+      return artistMatched;
+    }
+  }
+  
+  let result = findByArtist(myCollection, 'Artist B');
+  console.log(result);
+    
+
+ findByArtist(myCollection,'artist Z') 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
