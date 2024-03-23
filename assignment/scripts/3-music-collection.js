@@ -22,14 +22,13 @@ function addToCollection(collection, title, artist, yearPublished) {
 // Log the return value / Add albums to the collection
 console.log(addToCollection(myCollection, "Album 1", "Artist Z", 2001));
 console.log(addToCollection(myCollection, "Album 3", "Artist B", 2003));
-console.log(addToCollection(myCollection, "Album 3", "Artist A", 2015));
 console.log(addToCollection(myCollection, "Album 4", "Artist C", 2005));
 console.log(addToCollection(myCollection, "Album 5", "Artist B", 2020));
 console.log(addToCollection(myCollection, "Album 6", "Artist A", 2012));
 console.log(addToCollection(myCollection, "Album 6", "Artist A", 2012));
 // log myCollection
 console.log(myCollection);
-
+console.log({myCollection});
 
 
 
