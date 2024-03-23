@@ -20,7 +20,7 @@ function addToCollection(collection, title, artist, yearPublished) {
 }
 
 // Log the return value / Add albums to the collection
-console.log(addToCollection(myCollection, "Album 1", "Artist A", 2001));
+console.log(addToCollection(myCollection, "Album 1", "Artist Z", 2001));
 console.log(addToCollection(myCollection, "Album 3", "Artist B", 2003));
 console.log(addToCollection(myCollection, "Album 3", "Artist A", 2015));
 console.log(addToCollection(myCollection, "Album 4", "Artist C", 2005));
