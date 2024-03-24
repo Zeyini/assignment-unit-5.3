@@ -37,31 +37,22 @@ function showCollection (myCollection) {
     console.log(`${myCollection[i].title} by ${myCollection[i].artist}, published in ${myCollection[i].yearPublished}`);
   }
 }
-
  (showCollection(myCollection));
 
 
   function findByArtist(myCollection, artist) {
-    let artistMatched = []; // Create an empty array to hold any matching results
-  
-    for (let i = 0; i < myCollection.length; i++) {
-      if (artist === myCollection[i].artist) {
-        artistMatched.push(myCollection[i]);
-      }
-    }
-  
-    if (artistMatched.length === 0) {
-      return `No albums found for artist "${artist}"`;
-    } else {
-      return artistMatched;
-    }
-  }
-  
-  let result = findByArtist(myCollection, 'Artist B');
-  console.log(result);
-    
 
- findByArtist(myCollection,'artist Z') 
+    let artistMatched = []; // Create an empty array to hold any matching results
+
+    for (let i = 0; i < myCollection.length; i++) { // loops through the length of my collection array
+      if (artist === myCollection[i].artist) { // if the artist value matches one value in mycollection array
+        artistMatched.push(myCollection[i]); // push the matching value to artistMatched
+      }   
+    } return artistMatched; // returns the values pushed into the artistMatched array when loop completes
+  }
+
+  console.log(findByArtist(myCollection, 'Artist D'));
+  console.log(findByArtist(myCollection, 'Artist B'));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
